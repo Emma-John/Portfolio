@@ -5,8 +5,7 @@ import Navbar from './Navbar'
 function Header() {
   return (
     <div>
-    <h3>Header</h3>
-    <Navbar />
+      <Navbar />
     </div>
   )
 }
