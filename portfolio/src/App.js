@@ -4,6 +4,7 @@ import Resume from "./pages/Resume";
 import About from "./pages/About";
 import NoPage from "./pages/NoPage";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 import './styles.css';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
+      <Footer />
     </div>
     </>
   );
