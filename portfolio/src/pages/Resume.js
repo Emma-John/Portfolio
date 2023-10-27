@@ -1,12 +1,22 @@
 import React from 'react'
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
+import resume from '../styles/Johnson.Resume.pdf'
 
-
-function Resume() {
+const Resume = () => {
   return (
-    <>
-    <div>Resume</div>
-    </>
+    <div className='main-container'>
+      <Document file = {resume}>
+        <Page pageNumber={1}/>
+      </Document>
+    </div>
   )
 }
 
-export default Resume
+function Dis_res() {
+  return(
+    <Resume />
+  )
+}
+
+export default Dis_res
+

@@ -21,12 +21,10 @@ function About() {
         <p>Pink</p>
         <h3>Favorite Food: </h3>
         <p>La Pizza Napoletana</p>
-        <h3>Hometown: </h3>
-        <p>Springfield, Illinois</p>
-        <h3>Hometown: </h3>
-        <p>Springfield, Illinois</p>
-        
-
+        <h3>Favorite Programming Language: </h3>
+        <p>C#</p>
+        <h3>Fun Fact: </h3>
+        <p>I dye my hair red and I will never go back!</p>
     </div>
     </>
   )
