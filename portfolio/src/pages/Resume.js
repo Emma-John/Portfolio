@@ -1,22 +1,21 @@
+
 import React from 'react'
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import resume from '../styles/Johnson.Resume.pdf'
+import { Document, Page } from 'react-pdf';
+import { pdfjs } from 'react-pdf';
 
-const Resume = () => {
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.js',
+  import.meta.url,
+).toString();
+
+function MyPdfViewer() {
   return (
-    <div className='main-container'>
-      <Document file = {resume}>
-        <Page pageNumber={1}/>
-      </Document>
-    </div>
-  )
+    <>
+    <Document file="./JohnsonResume.pdf">
+      <Page></Page>
+    </Document>
+    </>
+  );
 }
 
-function Dis_res() {
-  return(
-    <Resume />
-  )
-}
-
-export default Dis_res
-
+export default MyPdfViewer;

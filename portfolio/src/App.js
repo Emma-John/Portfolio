@@ -5,6 +5,7 @@ import About from "./pages/About";
 import NoPage from "./pages/NoPage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+
 import './styles/styles.css';
 
 
